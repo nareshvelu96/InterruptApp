@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+
+    </style>
+    <style name="floatlabelededittext">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <color name="accent">#B6B6B6</color>
+<color name="card_bg">#66000000</color>
+    <color name="text_color">#ffffff</color>
+
+
+
+</resources>
