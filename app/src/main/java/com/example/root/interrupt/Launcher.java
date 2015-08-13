@@ -40,9 +40,9 @@ import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 import com.google.android.gms.plus.Plus;
 import com.google.android.gms.plus.model.people.Person;
-//import com.nispok.snackbar.Snackbar;
-//import com.nispok.snackbar.SnackbarManager;
-//import com.nispok.snackbar.listeners.ActionClickListener;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
+import com.nispok.snackbar.listeners.ActionClickListener;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -403,7 +403,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
     }
 
     public void showSnack(String message){
-       /* SnackbarManager.show(
+        SnackbarManager.show(
                 Snackbar.with(getApplicationContext()) // context
                         .text(message) // text to display
                         .actionLabel("Dismiss") // action button label
@@ -413,7 +413,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
                                 Log.d("TAG", "Undoing something");
                             }
                         }) // action button's ActionClickListener
-                , this);*/
+                , this);
 
     }
 

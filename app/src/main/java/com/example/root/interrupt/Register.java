@@ -17,9 +17,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-//import com.nispok.snackbar.Snackbar;
-//import com.nispok.snackbar.SnackbarManager;
-//import com.nispok.snackbar.listeners.ActionClickListener;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
+import com.nispok.snackbar.listeners.ActionClickListener;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -140,7 +140,7 @@ public class Register extends Activity {
     }
 
     public void showSnack(String message){
-       /* SnackbarManager.show(
+        SnackbarManager.show(
                 Snackbar.with(getApplicationContext()) // context
                         .text(message) // text to display
                         .actionLabel("Dismiss") // action button label
@@ -150,7 +150,7 @@ public class Register extends Activity {
                                 Log.d("TAG", "Undoing something");
                             }
                         }) // action button's ActionClickListener
-                , this);*/
+                , this);
 
     }
 

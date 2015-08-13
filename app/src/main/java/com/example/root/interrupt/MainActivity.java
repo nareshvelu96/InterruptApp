@@ -25,30 +25,39 @@ import com.parse.ParseInstallation;
 
 public class MainActivity extends ActionBarActivity {
 
-    private static int SPLASH_TIME_OUT = 1000;
+
 
     MediaPlayer mediaPlayer;
     SurfaceView surfaceView;
     SurfaceHolder surfaceHolder;
     boolean pausing = false;;
 
+    private static int SPLASH_TIME_OUT = 1000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        VideoView videoView = (VideoView)findViewById(R.id.videoview);
-        videoView.setMediaController(new MediaController(this));
-        videoView.setVideoURI(Uri.parse("android.resource://com.koostamas.tbbt/" + R.raw.intro));
-        videoView.start();
-        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                Intent i = new Intent(MainActivity.this, MainMenu.class);
+        new Handler().postDelayed(new Runnable() {
 
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
+
+            @Override
+            public void run() {
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(MainActivity.this, MainMenu.class);
                 startActivity(i);
+
+                // close this activity
+                finish();
             }
-        });
+        }, SPLASH_TIME_OUT);
+
 
 
     }

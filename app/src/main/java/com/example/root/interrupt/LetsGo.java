@@ -29,12 +29,12 @@ public class LetsGo extends Fragment {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //if(Values.prof_complete)
+                if(Values.prof_complete)
                 new IntentIntegrator(getActivity()).initiateScan();
-                //else{
-                   // Intent i = new Intent(getActivity().getApplicationContext(), Register.class);
-                   // startActivity(i);
-           //     }
+               else{
+                    Intent i = new Intent(getActivity().getApplicationContext(), Register.class);
+                    startActivity(i);
+                }
 
             }
         });

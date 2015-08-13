@@ -94,6 +94,7 @@
     <orderEntry type="library" exported="" name="play-services-panorama-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-drive-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
+    <orderEntry type="library" exported="" name="snackbar-2.11.0" level="project" />
     <orderEntry type="library" exported="" name="kenburnsview-1.0.6" level="project" />
     <orderEntry type="library" exported="" name="fadingactionbar-3.1.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-gcm-7.5.0" level="project" />

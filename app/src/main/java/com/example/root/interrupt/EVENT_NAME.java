@@ -29,7 +29,7 @@ import java.io.Writer;
 public class EVENT_NAME extends Activity {
  int counter=0,checker;
     int total;
-    boolean bol=true;
+    boolean bol=true,fin=false;
     Button b,a,c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class EVENT_NAME extends Activity {
         final String[] optiond= new String[20];
         final String lock="Your Option is ";
         final int[] ans= new int[20];
+
 
 
         // these questions are stored for c you have to remove this since some operators are considered as illegal in xml i have stored these haere
@@ -320,6 +321,7 @@ public class EVENT_NAME extends Activity {
                         }
                     }
                     Intent intent = new Intent(EVENT_NAME.this, QRinfo.class);
+                    fin=true;
                     intent.putExtra("tag","event");
                     intent.putExtra("score","" + checker);
                     startActivity(intent);
@@ -355,6 +357,9 @@ public class EVENT_NAME extends Activity {
         b.performClick();
         a.setClickable(false);
         c.setClickable(false);
+        if(fin){
+            finish();
+        }
 
        // b.performClick();
     }
@@ -366,7 +371,7 @@ public class EVENT_NAME extends Activity {
             //Ask the user if they want to quit
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle("Exit App?")
+                    .setTitle("Exit Prelims?")
                     .setMessage("Do you really want to quit?")
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
@@ -392,6 +397,7 @@ public class EVENT_NAME extends Activity {
     @Override
     protected void onStop() {
         super.onStop();
-        finish();
+        //finish();
+
     }
 }

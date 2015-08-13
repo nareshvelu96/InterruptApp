@@ -142,9 +142,5 @@ public class InEvent extends Activity implements View.OnClickListener {
         new IntentIntegrator(InEvent.this).initiateScan();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        finish();
-    }
+
 }
