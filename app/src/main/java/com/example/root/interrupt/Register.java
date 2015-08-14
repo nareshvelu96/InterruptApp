@@ -25,6 +25,8 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -125,7 +127,18 @@ public class Register extends Activity {
                     showSnack("Complete The Form");
                 }else if(!Spassword.equals(Srpassword)){
                     showSnack("Passwords Don't Match");
-                }else{
+                }else if(Spassword.length()>6){
+                    showSnack("Password must have minimum 6 characters");
+                }
+                else{
+                    Hasher h =new Hasher();
+                    try {
+                        Spassword=h.SHA1(h.md5(h.SHA1(Spassword)));
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
                     new RegisterUser().execute();
 
                 }

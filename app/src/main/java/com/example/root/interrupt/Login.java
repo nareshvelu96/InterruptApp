@@ -21,6 +21,8 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +58,14 @@ public class Login extends Activity {
                         tag="login_phone";
                     }else{
                         tag="login_email";
+                    }
+                    Hasher h =new Hasher();
+                    try {
+                        passwords=h.SHA1(h.md5(h.SHA1(passwords)));
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
                     }
                 new LoginUser().execute();
 
@@ -104,10 +114,10 @@ public class Login extends Activity {
             final JSONParser jParser2 = new JSONParser();
             List<NameValuePair> params2 = new ArrayList<NameValuePair>();
             params2.add(new BasicNameValuePair("tag",tag));
-            params2.add(new BasicNameValuePair("name",user));
+            params2.add(new BasicNameValuePair("uname",user));
             params2.add(new BasicNameValuePair("password",passwords));
 
-            jsonobject = jParser2.makeHttpRequest(url, "POST", params2);
+            jsonobject = jParser2.makeHttpRequest(url, "GET", params2);
 
             try{
 
@@ -118,7 +128,13 @@ public class Login extends Activity {
 
                     Values.auth_token=jsonobject.getString("auth_token").toString();
                     Values.id=jsonobject.getString("id").toString();
+                    Values.name=jsonobject.getString("name").toString();
+                    Values.email=jsonobject.getString("email").toString();
+                    Values.phone=jsonobject.getString("phone").toString();
 
+                    editor.putString("name", Values.name);
+                    editor.putString("email", Values.email);
+                    editor.putString("phone", Values.phone);
                     editor.putString("auth_token", Values.auth_token);
                     editor.putString("id", Values.id);
                     editor.commit();
@@ -136,7 +152,7 @@ public class Login extends Activity {
         @Override
         protected void onPostExecute(Boolean th){
 
-            if(th == false){
+            if(th == true){
                 nDialog.dismiss();
             Values.is_loggedin=true;
                 SharedPreferences pref = getSharedPreferences("MyPref", Context.MODE_PRIVATE);

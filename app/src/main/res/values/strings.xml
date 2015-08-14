@@ -8,8 +8,47 @@
 <string name="drawer_close">drawer_close</string>
 
 
-    <string name="about_interrupt">\t\t\tInterrupt is an event .\n please do come.</string>
-    <string name="why_app">\tApp makes life easy at interrupt.</string>
+    <string name="about_interrupt">\t\t\tHere we go INTERRUPTing a calm day again. Presenting the wildest and most viral sensation since cat videos and North
+West, Interrupt’15 is back-bigger and better than ever! Flying
+
+grenades, flipping ninjas and Chuck Norris all over town.
+
+Become the Sherlock Holmes through our treasure hunt, or be
+
+namma ooru “Dennis Ritchie” in coding. Idhu just trailor
+
+kannu,come see the real picture on the 7th of September at
+
+SVCE.</string>
+    <string name="interrupt14">‘Boisterous’-One word that describes Interrupt’14 best. As always, the symposium
+
+had surpassed the expectations and set the bar really high making it even more
+
+challenging for the subsequent years to come. There were multiple online and offline
+
+events covering both the technical and non-technical side. The workshop on web
+
+development helped the students explore this wide arena. Numbers say a lot more
+
+than words. So, seeing how there were about 1500 students who participated from
+
+across the country, this event was a huge success.</string>
+    <string name="why_app">\tWhy not app? According to recent statistics, about 68% of smartphone owners use apps more than
+
+ten times a day and we’re all one among them.  Driven by technology, we wanted to make it easier
+
+and more accessible with just a click of a button. Get notified on the latest event updates and
+
+register directly using the app. On registering, a QR code would be generated for the participants
+
+which would be scanned onsite for confirmation of participation. Pretty fancy, isn’t it?</string>
+
+
+    <string name="letsgo">Kindly register yourselves using the app. Upon registering, a QR code would be generated for the
+
+particular participant. Bring your phone along and get the QR code scanned onsite at SVCE on the
+
+day of the symposium to confirm your participation.</string>
 
     <string-array name="myb">
         <item>MYB V3.0</item>

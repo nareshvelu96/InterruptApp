@@ -10,6 +10,7 @@ public class Values {
     static String id,name,email,auth_token,phone;
     static boolean ismyb,istabloid,issynt,istrifacta,isbombquad,isdumbc;
     static boolean prof_complete,is_loggedin,is_inevent;
+
 public Values(Context c){
 
     SharedPreferences pref = c.getSharedPreferences("MyPref", Context.MODE_PRIVATE);

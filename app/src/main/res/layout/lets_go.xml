@@ -9,7 +9,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/cardMarginVertical"
         android:layout_marginLeft="@dimen/cardMarginHorizontal"
         android:layout_marginRight="@dimen/cardMarginHorizontal"
@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
             android:layout_margin="10dp">
         <TextView
             android:layout_width="match_parent"
@@ -35,7 +36,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Interrupt\nClick on the Participate Button and scan the QR code on the Register desk to participate in INTERRUT"
+        android:text="@string/letsgo"
         android:id="@+id/textView"
         android:textColor="#727272"
         android:layout_marginTop="20dp"/>

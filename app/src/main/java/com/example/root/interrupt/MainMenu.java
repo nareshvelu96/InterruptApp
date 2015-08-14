@@ -27,6 +27,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,7 +42,7 @@ import com.ikimuhendis.ldrawer.DrawerArrowDrawable;
  * Created by root on 26/7/15.
  */
 public class MainMenu extends AppCompatActivity{
-
+static boolean isregistertrigger=false;
     static DrawerLayout mDrawerLayout;
     static ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -95,8 +96,9 @@ public class MainMenu extends AppCompatActivity{
                 return false;
             }
         };
+
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-                drawerArrow, R.string.drawer_open,
+                R.drawable.ic_drawer, R.string.drawer_open,
                 R.string.drawer_close) {
 
             public void onDrawerClosed(View view) {
@@ -129,8 +131,27 @@ public class MainMenu extends AppCompatActivity{
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         TextView listHeader = new TextView(MainMenu.this);
+        Button share=new Button(MainMenu.this);
+
         listHeader.setText("7th September");
         listHeader.setTextSize(20);
+
+
+        share.setText("Spread the Word");
+        share.setBackground(getResources().getDrawable(R.drawable.register));
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                String shareBody = "www.interrupt15.in";
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Download the Interrupt15 App from");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                startActivity(Intent.createChooser(sharingIntent, "Share via"));
+            }
+        });
+
+        mDrawerList.addFooterView(share);
 
         mDrawerList.addHeaderView(listHeader);
         mDrawerList.setAdapter(adapter);
@@ -309,5 +330,29 @@ public class MainMenu extends AppCompatActivity{
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(isregistertrigger){
+            Fragment fragment = null;
+            fragment = new RegisterEvent();
+            if (fragment != null) {
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.layout_container, fragment).commit();
 
+                // update selected item and title, then close the drawer
+                MainMenu.mDrawerList.setItemChecked(5, true);
+                MainMenu.mDrawerList.setSelection(5);
+                //setTitle(navMenuTitles[position]);
+                MainMenu.mDrawerLayout.closeDrawer(MainMenu.mDrawerList);
+                isregistertrigger=false;
+            } else {
+                // error in creating fragment
+                Log.e("MainActivity", "Error in creating fragment");
+            }
+
+
+        }
+    }
 }

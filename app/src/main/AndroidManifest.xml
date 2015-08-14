@@ -40,8 +40,10 @@
 
         <activity android:name=".MainMenu"
 
+
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
+
         </activity>
         <activity android:name=".InEvent"
             android:theme="@style/AppTheme"
