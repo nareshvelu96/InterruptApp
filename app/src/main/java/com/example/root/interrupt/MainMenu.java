@@ -123,7 +123,7 @@ static boolean isregistertrigger=false;
                 "Why App?",
                 "SVCE Map",
                 "Event Registration",
-                "Our Sponsors",
+               // "Our Sponsors",
                 "Contact us",
                 "Let's Go"
 
@@ -227,7 +227,7 @@ static boolean isregistertrigger=false;
                 fragment = new WhyAppFragment();
                 setTitle("Why App?");
                 break;
-            case 9:
+            case 8:
                 fragment = new LetsGo();
                 setTitle("Let's Go");
                 break;
@@ -239,11 +239,11 @@ static boolean isregistertrigger=false;
                 fragment=new RegisterEvent();
                 setTitle("Event Registration");
                 break;
-            case 7:
+            case -1:
                 fragment=new SponsorFragment();
                 setTitle("Sponsor");
                 break;
-            case 8:
+            case 7:
                 fragment=new ContactUsFragment();
                 setTitle("Contact us");
                 break;

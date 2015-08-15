@@ -33,6 +33,7 @@ public class LetsGo extends Fragment {
                 new IntentIntegrator(getActivity()).initiateScan();
                else{
                     Intent i = new Intent(getActivity().getApplicationContext(), Register.class);
+                    i.putExtra("tag","update");
                     startActivity(i);
                 }
 

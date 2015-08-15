@@ -47,7 +47,7 @@ final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
         e[4]=(CheckBox)rootView.findViewById(R.id.cfcb);
         e[5]=(CheckBox)rootView.findViewById(R.id.thcb);
 
-       // e[6]=(CheckBox)rootView.findViewById(R.id.tricb);
+        e[6]=(CheckBox)rootView.findViewById(R.id.tricb);
         e[7]=(CheckBox)rootView.findViewById(R.id.bombcb);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +57,7 @@ final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
                     startActivity(i);
                 }else if(!Values.prof_complete){
                     Intent i = new Intent(getActivity().getApplicationContext(), Register.class);
+                    i.putExtra("tag","update");
                     startActivity(i);
                 }else{
                     params2.add(new BasicNameValuePair("id",Values.id));

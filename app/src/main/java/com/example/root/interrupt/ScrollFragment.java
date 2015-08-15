@@ -43,6 +43,7 @@ public class ScrollFragment extends Fragment {
                     startActivity(i);
                 }else if(!Values.prof_complete){
                     Intent i = new Intent(getActivity().getApplicationContext(), Register.class);
+                    i.putExtra("tag","update");
                     startActivity(i);
                 }else{
                     MainMenu.isregistertrigger=true;

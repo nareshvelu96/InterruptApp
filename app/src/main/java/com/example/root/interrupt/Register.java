@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -34,12 +35,13 @@ import java.util.List;
  * Created by root on 23/7/15.
  */
 public class Register extends Activity {
-    static String tag="insert";
+     String tag;
     Button register;
     EditText name,phone,email,password,rpassword;
-    Spinner college,dept,year;
+    Spinner dept,year;
+    AutoCompleteTextView college;
     String department="",collegeName="",Sname,Semail,Spassword,Srpassword,Sphone,Syear="";
-    final String url="http://webtest.netai.net/i15/register.php";
+    final String url="http://webtest.netai.net/i15/app/register.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,29 +52,23 @@ public class Register extends Activity {
         email=(EditText)findViewById(R.id.email);
         password=(EditText)findViewById(R.id.password);
         rpassword=(EditText)findViewById(R.id.rpassword);
-        college=(Spinner)findViewById(R.id.college);
+        college=(AutoCompleteTextView)findViewById(R.id.college);
         dept=(Spinner)findViewById(R.id.dept);
         year=(Spinner)findViewById(R.id.year);
        name.setText(Values.name);
         email.setText(Values.email);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.college_names, R.layout.custom_spinner);
+        tag=getIntent().getExtras().getString("tag");
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        String[] colnames = getResources().getStringArray(R.array.college_names);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Register.this,android.R.layout.simple_list_item_1,colnames);
+
 
         college.setAdapter(adapter);
 
 
 
-        college.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-                collegeName = parent.getItemAtPosition(pos).toString();
-            }
 
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.departments, R.layout.custom_spinner);
 
@@ -115,6 +111,7 @@ public class Register extends Activity {
                 Semail = email.getText().toString();
                 Spassword=password.getText().toString();
                 Srpassword=rpassword.getText().toString();
+                collegeName=college.getText().toString();
                 ConnectionDetector cd = new ConnectionDetector(Register.this);
                 if(!cd.isConnectingToInternet()){
                     showSnack("No Internet Conectivity");
@@ -194,14 +191,18 @@ public class Register extends Activity {
             final JSONParser jParser2 = new JSONParser();
             List<NameValuePair> params2 = new ArrayList<NameValuePair>();
             params2.add(new BasicNameValuePair("tag",tag));
+            if(tag.equals("update"))
+               params2.add(new BasicNameValuePair("id",Values.id));
+          else
+               params2.add(new BasicNameValuePair("id",""));
             params2.add(new BasicNameValuePair("name",Sname));
             params2.add(new BasicNameValuePair("password",Spassword));
             params2.add(new BasicNameValuePair("email",Semail));
             params2.add(new BasicNameValuePair("phone_no",Sphone));
             params2.add(new BasicNameValuePair("college",collegeName));
-            params2.add(new BasicNameValuePair("dept",department));
+            params2.add(new BasicNameValuePair("department",department));
             params2.add(new BasicNameValuePair("year",Syear));
-            jsonobject = jParser2.makeHttpRequest(url, "GET", params2);
+            jsonobject = jParser2.makeHttpRequest(url, "POST", params2);
 
             try{
 
@@ -237,9 +238,13 @@ public class Register extends Activity {
                 Values.email=Semail;
                 Values.name=Sname;
                 Values.phone=Sphone;
-                Intent i = new Intent(Register.this, Launcher.class);
-                startActivity(i);
-
+                if(tag.equals("insert")) {
+                    Intent i = new Intent(Register.this, Launcher.class);
+                    startActivity(i);
+               }else{
+                    Intent i = new Intent(Register.this, MainMenu.class);
+                    startActivity(i);
+                }
 
             }
             else{

@@ -61,10 +61,29 @@ day of the symposium to confirm your participation.</string>
     </string-array>
 
     <string-array name="tabloid">
-        <item>TABLOID</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
+        <item>CODOWITZ</item>
+        <item>Do you think you can find hidden words? Do you think your letters are better organised than anybody else’s? Do you believe in logical reasoning  and forming words using letters from patterns?
+
+If you are Wordsworth or even 10% his words’ worth,  this is the right event for
+
+you. Mind you, the only language you need to know is a little English and certain
+
+computer science terms( The latter only for extra points). So feel free and jump in
+
+to indulge, guess and talk gibberish in the best possible ways. </item>
+
+        <item>\t1.Application based data structures( NOT QUIZ, on\n\t spot only but in app{we are in
+
+a green movement,\n\t you see :P})\n\n\t
+2.Word Search (from data structures)\n\t\n
+
+3.”Sethan sivanandi” round (dare to find out).</item>
+        <item> \t 1. Download our app\n\t\n
+ 2. A Very Basic knowledge on basic data\n\t structures (arrays, stack, queues, list and
+
+\n\t trees) CODING NOT NECESSARY.\n\n\t
+
+3.NOT  a TEAM event.</item>
         <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
 
     </string-array>
@@ -940,7 +959,7 @@ day of the symposium to confirm your participation.</string>
 
         <item>JNN INSTITUTE OF ENGINEERING</item>
 
-        <item>ST.PETER’S COLLEGE OF ENGINEERING AND TECHNOLOGY</item>
+        <item>ST.PETER\’S COLLEGE OF ENGINEERING AND TECHNOLOGY</item>
 
         <item>R.M.K. COLLEGE OF ENGINEERING AND TECHNOLOGY</item>
 
@@ -1227,18 +1246,56 @@ day of the symposium to confirm your participation.</string>
         <item>K.K.C COLLEGE OF ENGINEERING AND TECHNOLOGY</item>
 
         <item>MEENAKSHI RAMASWAMY ENGINEERING COLLEGE</item>
+        <item>Amrita Vishwa Vidyapeetham</item>
+    <item>Avinashilingam Institute for Home Science and Higher Education for Women</item>
+<item>B.S. Abdul Rahman Institute of Science and Technology</item>
+<item>Bharath Institute of Higher Education and Research</item>
+<item>Chennai Mathematical Institute</item>
+<item>Chettinad Academy of Research and Education (CARE)</item>
+<item>Gandhigram Rural Institute</item>
+<item>Hindustan Institute of Technology and Science (HITS)</item>
+<item>Kalasalingam Academy of Research and Higher Education</item>
+<item>Karpagam Academy of Higher Education</item>
+<item>Karunya Institute of Technology and Sciences</item>
+<item>M.G.R. Educational and Research Institute</item>
+<item>Meenakshi Academy of Higher Education and Research</item>
+<item>Noorul Islam Center for Higher Education</item>
+<item>Periyar Maniammai Institute of Science and Technology (PMIST)</item>
+<item>Ponnaiyah Ramajayam Institute of Science and Technology (PRIST)</item>
+<item>Rajiv Gandhi National Institute of Youth Development</item>
+<item>Ramakrishna Mission Vivekananda University, (West Bengal) Coimbatore campus</item>
+<item>S.R.M Institute of Science and Technology</item>
+<item>Sathyabama Institute of Science and Technology</item>
+<item>Saveetha Institute of Medical and Technical Sciences</item>
+<item>Shanmugha Arts, Science, Technology and Research Academy (SASTRA)</item>
+<item>Sri Chandrasekharendra Saraswathi Vishwa Mahavidyalaya</item>
+<item>Sri Ramachandra Medical College and Research Institute</item>
+<item>St. Peter\'s Institute of Higher Education and Research</item>
+<item>Vel Tech Rangrajan Dr. Sagunthala RandD Institute of Science and Technology</item>
+<item>Vellore Institute of Technology</item>
+<item>Vel\'s Institute of Science, Technology and Advanced Studies (VISTAS)</item>
+<item>Vinayaka Mission\'s Research Foundation</item>
 
 
 
     </string-array>
 
     <string-array name="departments">
-        <item>Department</item>
-        <item>svce</item>
-        <item>iitm</item>
-        <item>rec</item>
-        <item>ssn</item>
-        <item>sghasta</item>
+
+
+            <item>AUT</item>
+            <item>BIO</item>
+            <item>CHE</item>
+            <item>CIV</item>
+            <item>CSE</item>
+            <item>ECE</item>
+            <item>EEE</item>
+            <item>IT</item>
+            <item>MAR</item>
+            <item>MEC</item>
+
+
+
 
     </string-array>
 
@@ -1264,6 +1321,7 @@ day of the symposium to confirm your participation.</string>
         <item>Air Tel office</item>
         <item>Ajantha</item>
         <item>Alwarpet</item>
+        <item>Ambal Nagar</item>
         <item>Ambattur</item>
         <item>Ambattur Telephone exchange</item>
         <item>Aminjikarai</item>
@@ -1279,6 +1337,7 @@ day of the symposium to confirm your participation.</string>
         <item>Attu Thotti</item>
         <item>Avadi</item>
         <item>Avichi</item>
+        <item>Ayanavaram</item>
         <item>Ayanavaram ESI</item>
         <item>Ayodhya Manadapam</item>
         <item>Ayodhya Mandapam</item>
@@ -1287,6 +1346,7 @@ day of the symposium to confirm your participation.</string>
         <item>Ayyappan thangal</item>
         <item>Bazullah Road</item>
         <item>Beach station</item>
+        <item>Besant Nagar</item>
         <item>Blue star</item>
         <item>Blue Star</item>
         <item>Camp road</item>
@@ -1307,6 +1367,7 @@ day of the symposium to confirm your participation.</string>
         <item>Doveton</item>
         <item>Duraisamy Subway</item>
         <item>East Tambaram</item>
+        <item>Egmore</item>
         <item>Eratteri</item>
         <item>Ethiraj College</item>
         <item>Golden Flats</item>
@@ -1325,8 +1386,10 @@ day of the symposium to confirm your participation.</string>
         <item>K4 Station</item>
         <item>Kaladipet</item>
         <item>Kalliappa</item>
+        <item>Kancheepuram</item>
         <item>Kancheepuram Main Bus Stand</item>
         <item>Kancheepuram New Railway Station</item>
+        <item>Kanchipuram</item>
         <item>Kasi Theatre</item>
         <item>Kathipara</item>
         <item>Kathipara Junction</item>
@@ -1345,7 +1408,6 @@ day of the symposium to confirm your participation.</string>
         <item>Kotturpuram</item>
         <item>Kovilambakkam</item>
         <item>Koyambedu</item>
-        <item>Koyambedu rountana</item>
         <item>Koyambedu Rountana</item>
         <item>Koyambedu Rountana	</item>
         <item>Koyembedu</item>
@@ -1359,11 +1421,13 @@ day of the symposium to confirm your participation.</string>
         <item>Little mount</item>
         <item>Little Mount</item>
         <item>Lloyds Road</item>
+        <item>Lotus Colony</item>
         <item>Loyola</item>
         <item>Loyola college</item>
         <item>Lucas Bridge</item>
         <item>Lucas TVS</item>
         <item>Luz signal</item>
+        <item>Madipakkam</item>
         <item>Maduravoyal</item>
         <item>Maduravoyil</item>
         <item>Maduravoyil Bridge</item>
@@ -1373,14 +1437,17 @@ day of the symposium to confirm your participation.</string>
         <item>Mandaveli</item>
         <item>Mandaveli BS</item>
         <item>Mangadu</item>
+        <item>Medavakkam</item>
         <item>Medavakkam Koot Road</item>
         <item>Medavakkam Tank</item>
         <item>Meenakshi Hospital</item>
+        <item>Meenambakkam</item>
         <item>MEPZ</item>
         <item>Metha Nagar</item>
         <item>Mettu Street</item>
-        <item>Milk Canteen (B C mill back gate)</item>
+        <item>Milk Canteen (BandC mill back gate)</item>
         <item>Mint</item>
+        <item>MKB Nagar</item>
         <item>MLM</item>
         <item>MMC</item>
         <item>Moolakadai</item>
@@ -1389,11 +1456,11 @@ day of the symposium to confirm your participation.</string>
         <item>Mugappair - 7H bus stop</item>
         <item>Mugappair West</item>
         <item>Music Academy</item>
+        <item>Mylapore</item>
         <item>Mylapore Tank</item>
         <item>Nadha muni Theatre</item>
         <item>Nanganallur</item>
         <item>Nazarathpet</item>
-        <item>Nazarathpet(this route will exist only from Tuesday to Friday)</item>
         <item>Nazarthpet</item>
         <item>Nerkundram</item>
         <item>New Avadi Road</item>
@@ -1410,6 +1477,7 @@ day of the symposium to confirm your participation.</string>
         <item>Panagal park</item>
         <item>Pandicherry Guest House</item>
         <item>Park Sheraton</item>
+        <item>Perambur</item>
         <item>Perambur Bus Stand</item>
         <item>Periyar Nagar</item>
         <item>Perungalathur</item>
@@ -1427,6 +1495,7 @@ day of the symposium to confirm your participation.</string>
         <item>Ramapuram</item>
         <item>Ramarathana Theatre</item>
         <item>Retteri</item>
+        <item>Retteri / Korattur</item>
         <item>Royapetah</item>
         <item>Royapuram</item>
         <item>SAF</item>
@@ -1435,12 +1504,12 @@ day of the symposium to confirm your participation.</string>
         <item>Sakthi Nagar</item>
         <item>Sankara Mutt</item>
         <item>Santhavelur</item>
+        <item>Santhome</item>
         <item>Saravana Bhavan Hotel</item>
         <item>Senthil Nagar</item>
         <item>SIET</item>
         <item>Somanagalam</item>
         <item>Somangalam</item>
-        <item>SRP Tools</item>
         <item>Sterlingroad</item>
         <item>St.Thomas mount</item>
         <item>SVCE</item>
@@ -1451,45 +1520,109 @@ day of the symposium to confirm your participation.</string>
         <item>Taylors Road</item>
         <item>Theradi</item>
         <item>Thirumangalam</item>
+        <item>Thirumangalam signal</item>
         <item>Thirumangalam Signal</item>
         <item>Thirumazhisai</item>
         <item>Thirumullaivoyal</item>
         <item>Thiruninravur Bridge</item>
+        <item>Thiruvallur</item>
         <item>Thiruvallur Court-petrol bunk</item>
-        <item>Thiruverkadu</item>
         <item>Tirumangalam</item>
         <item>Tirumangalam signal</item>
+        <item>Tiruvanmiyur</item>
+        <item>Tiruvotriyur</item>
+        <item>T. Nagar</item>
         <item>Toll gate</item>
         <item>Tondairpet</item>
         <item>Trident</item>
+        <item>Triplicane</item>
         <item>TVK Nagar</item>
         <item>TVK Park</item>
         <item>Urapakkam</item>
         <item>Vadapalani</item>
+        <item>Vadapalini</item>
         <item>Valasaravakakm</item>
         <item>Valasaravakkam</item>
         <item>Valasarawakkam</item>
-        <item>Vanagaram</item>
-        <item>Vanagaram Vellappanchavadi</item>
+        <item>Valluvar Kottam</item>
+        <item>Vanagaram and Vellappanchavadi</item>
         <item>Vandalur</item>
         <item>Vannanthurai</item>
         <item>Vanuvampet</item>
         <item>Vanuvampettai</item>
         <item>Varadharaja perumal koil</item>
+        <item>Velachery</item>
         <item>Velappanchavadi</item>
         <item>Veppampattu</item>
         <item>Vijaya Nagar</item>
         <item>Villivakkam</item>
         <item>Virugambakkam</item>
         <item>Virugambakkam Kesavarthini</item>
-        <item>Vivek  Co</item>
+        <item>Vivek and Co</item>
         <item>Vyasabadi Jeeva</item>
         <item>Walltax road</item>
         <item>Waves</item>
         <item>Waves (TNEB)</item>
         <item>Wavin</item>
+        <item>W.Depot/Wavin</item>
         <item>West Depot</item>
-
+        <item>Vellayanchetty School </item>
+        <item>TVK Park </item>
+        <item>Silverstar Hotel </item>
+        <item>TVK Park </item>
+        <item>Perambur Rly Stn </item>
+        <item>MKB Nagar </item>
+        <item>Anna Statue </item>
+        <item>Lucas TVS </item>
+        <item>Lucas TVS </item>
+        <item>Lotus Colony </item>
+        <item>W.Depot </item>
+        <item>Thirumangalam signal </item>
+        <item>Lucas TVS </item>
+        <item>Highcourt </item>
+        <item>Apollo Hospital </item>
+        <item>Noor Hotel </item>
+        <item>Moolakadai </item>
+        <item>Retteri </item>
+        <item>Thirumangalam signal </item>
+        <item>Gosha Hospital </item>
+        <item>Yellow Pages </item>
+        <item>Santhome </item>
+        <item>Yellow Pages </item>
+        <item>Don Bosco </item>
+        <item>Pillaiyar Koil </item>
+        <item>Tiruvanmiyur - Hotchips </item>
+        <item>SRP Tools </item>
+        <item>MEPZ </item>
+        <item>Madipakkam B.S </item>
+        <item>Music Academy </item>
+        <item>Yellow Pages </item>
+        <item>Meenambakkam </item>
+        <item>Mangadu Pattur koot Road </item>
+        <item>Saidapet </item>
+        <item>Medavakkam Koot Road </item>
+        <item>Kovilambakkam </item>
+        <item>Madipakkam </item>
+        <item>Maraimalai Nagar </item>
+        <item>Aavichi School </item>
+        <item>Next to Neel metal processing unit bus stop  </item>
+        <item>CIPET </item>
+        <item>Ashok Pillar </item>
+        <item>Nagesh Theatre </item>
+        <item>Krishnaveni Theatre </item>
+        <item>Nagesh Theatre </item>
+        <item>Nagesh Theatre </item>
+        <item>Vani Mahal </item>
+        <item>Ashok Pillar </item>
+        <item>TCS </item>
+        <item>Vani Mahal </item>
+        <item>Anna Statue </item>
+        <item>Nagesh Theatre </item>
+        <item>Sakthi Nagar </item>
+        <item>Housing Board </item>
+        <item>Housing board </item>
+        <item>Military Road </item>
+        <item>Pattabiram- Gandhi Nagar </item>
 
     </string-array>
 

@@ -36,7 +36,7 @@ public class TransportFragment extends Fragment {
     AutoCompleteTextView searchBar;
     custom_list adapter;
     Button Search;
-    final String url="http://webtest.netai.net/i15/transport.php";
+    final String url="http://webtest.netai.net/i15/app/transport.php";
     //final String no="route_no",route="bus_route",start="starting_point",time="time",via="via";
     String[] number,start,time,via;
     ListView list;
@@ -106,10 +106,10 @@ public class TransportFragment extends Fragment {
 
                 params2.add(new BasicNameValuePair("tag", "retreive"));
             }else{
-                params2.add(new BasicNameValuePair("stop", searchBar.getText().toString()));
+                params2.add(new BasicNameValuePair("stop", searchBar.getText().toString().replaceAll("\\s","")));
                 params2.add(new BasicNameValuePair("tag", "search"));
             }
-            jsonobject = jParser2.makeHttpRequest(url, "GET", params2);
+            jsonobject = jParser2.makeHttpRequest(url, "POST", params2);
 
             try{
 

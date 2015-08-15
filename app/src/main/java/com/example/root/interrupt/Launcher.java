@@ -67,7 +67,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
     private static final String SERVER_BASE_URL = "SERVER_BASE_URL";
     private static final String TAG = "android-plus-quickstart";
     public static Activity act;
-    static String url="http://webtest.netai.net/i15/register.php";
+    String url="http://webtest.netai.net/i15/app/register.php";
     public Button login,signup;
      List<String> permissions;
     Boolean fb=false;
@@ -134,12 +134,12 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
                                             //userid = jsonObject.getString("id");
                                           //  profile_picture = "https://graph.facebook.com/" + userid + "/picture?width=200&height=200";
                                             email = jsonObject.optString("email");
-                                            Log.e("emai", email + "");
+                                            Log.e("email", email + "");
                                             Log.e("", dob + "");
                                             Log.e("", name + "");
                                             Log.e("userid", userid + "");
                                            new UserRegister().execute();
-                                            Toast.makeText(getApplicationContext(),name+email,Toast.LENGTH_LONG).show();
+                                          //  Toast.makeText(getApplicationContext(),name+email,Toast.LENGTH_LONG).show();
 
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -175,6 +175,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
             @Override
             public void onClick(View v) {
                 Intent signup = new Intent(Launcher.this,Register.class);
+                signup.putExtra("tag","insert");
                 startActivity(signup);
             }
         });
@@ -234,7 +235,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
         Log.i(TAG, "onConnected");
        mSignInButton.setEnabled(false);
        // Log.e("Constant",ConstantValues.google+"goog");
-            Toast.makeText(this, "User is connected!", Toast.LENGTH_LONG).show();
+           // Toast.makeText(this, "User is connected!", Toast.LENGTH_LONG).show();
             mSignInButton.setEnabled(false);
             if (Plus.PeopleApi.getCurrentPerson(googleApiClient) != null) {
                 Person currentPerson = Plus.PeopleApi
@@ -260,7 +261,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
                 //ConstantValues.google="signin";
                 email = Plus.AccountApi.getAccountName(googleApiClient);
 
-                Toast.makeText(getApplicationContext(),name + email,Toast.LENGTH_LONG).show();
+             //   Toast.makeText(getApplicationContext(),name + email,Toast.LENGTH_LONG).show();
                 Log.e("email", "email" + userid);
                 new UserRegister().execute();
         }
@@ -426,7 +427,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
         protected void onPreExecute(){
             super.onPreExecute();
             nDialog = new ProgressDialog(Launcher.this);
-            nDialog.setTitle("Verifying Phone Number");
+            nDialog.setTitle("Registering..");
             nDialog.setMessage("Please Wait..");
             nDialog.setIndeterminate(false);
             nDialog.setCancelable(true);
@@ -448,7 +449,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
             params2.add(new BasicNameValuePair("college",""));
             params2.add(new BasicNameValuePair("dept",""));
             params2.add(new BasicNameValuePair("year",""));
-            jsonobject = jParser2.makeHttpRequest(url, "GET", params2);
+            jsonobject = jParser2.makeHttpRequest(url, "POST", params2);
 
             try{
 
@@ -456,6 +457,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
                 if( !(new String(message).equals("0"))){
                     Values.auth_token=jsonobject.getString("auth_token").toString();
                     Values.id=jsonobject.getString("id").toString();
+                    Values.is_loggedin=true;
                     return true;
                 }
 
@@ -476,7 +478,7 @@ public class Launcher extends Activity implements   ConnectionCallbacks, OnConne
                 // if(pref.getString("done", null)==null){
                 editor.putString("name", name);
                 editor.putString("email", email);
-
+                editor.putBoolean("islogged",true);
                 editor.putString("auth_token", Values.auth_token);
                 editor.putString("id", Values.id);
                 Values.is_loggedin=true;
