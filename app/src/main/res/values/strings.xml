@@ -52,17 +52,30 @@ day of the symposium to confirm your participation.</string>
 
     <string-array name="myb">
         <item>MYB V3.0</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
+        <item>I am the person anybody turns to for suggestions(friends:Where  can we go? U: where we always do... friends: wonderful da!!).\n\n
+ I can tackle my way out of any situation logically(If you had a pizza with crust thickness \'A\' and radius \'Z\', what\'s the volume of the pizza?  .\n\n
+I do a lot of non- technical scenario-based thinking almost always seemingly paradoxical.(eg. Did the teacher kick me out because I was talking when he was talking or because I did not talk when he wanted me to.).\n\n
+Do you know the art of “SAMALIFICATION?”( for those of you who don’t know what it means,  don’t fret, it is something you do during viva to the external!)\n\n
+If you do at least one of the above, why are you wasting time reading?\n\n
+Register now. </item>
+        <item>
+1. Personality-based sentimental analysis \n
+(In app and on spot only, pen and paper also)\n
+(Q::Do you forgive an offender or will you take revenge?\n A::Never mind, both are right). (option c: pat-slap (whack!!):P)\n\n
+2. Guess the product!!(just make the CONNEXION)\n\n
+3. What’s business without some gamble? Gear up to be nimble; Don’t tremble, for you have full rights to ramble!!\n\n
+DumbC+ rapid fire+ puzzles</item>
 
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>1. Download our app\n\n
+2.  neenga vanda mattum podum!!!\n\n
+3. 2 members max. Individual contents are also welcome.</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 
     <string-array name="tabloid">
         <item>CODOWITZ</item>
-        <item>Do you think you can find hidden words? Do you think your letters are better organised than anybody else’s? Do you believe in logical reasoning  and forming words using letters from patterns?
+        <item><p>Do you think you can find hidden words? Do you think your letters are better organised than anybody else’s? Do you believe in logical reasoning  and forming words using letters from patterns?
 
 If you are Wordsworth or even 10% his words’ worth,  this is the right event for
 
@@ -70,48 +83,70 @@ you. Mind you, the only language you need to know is a little English and certai
 
 computer science terms( The latter only for extra points). So feel free and jump in
 
-to indulge, guess and talk gibberish in the best possible ways. </item>
+to indulge, guess and talk gibberish in the best possible ways. </p></item>
 
-        <item>\t1.Application based data structures( NOT QUIZ, on\n\t spot only but in app{we are in
+        <item>\t1.Application based data structures( NOT QUIZ, on spot only but in app{we are in
 
-a green movement,\n\t you see :P})\n\n\t
+a green movement,you see :P})\n\n
 2.Word Search (from data structures)\n\t\n
 
 3.”Sethan sivanandi” round (dare to find out).</item>
-        <item> \t 1. Download our app\n\t\n
+        <item> \t 1. Download our app\n\t\n\t
  2. A Very Basic knowledge on basic data\n\t structures (arrays, stack, queues, list and
 
 \n\t trees) CODING NOT NECESSARY.\n\n\t
 
 3.NOT  a TEAM event.</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 
     <string-array name="syntaxis">
-        <item>SYNTAXIS</item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>this is an event </item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>DATA DOSSIER</item>
+        <item>Search, think, dig and mine until you strike data, the “Diamond of the millennia”. \n\n
+“Can you read tables?”. You CAN’T say NO. ‘cause time tables have tested us through and through. All the time. Now its TIME for TABLES to be IN something . Rather it is time for everything to be in tables. They extract your resources, time and energy. Its time for REVENGE.  So get ready to comprehend and extract from tables. All set? Sweet revenge! There you are! Best offer. </item>
+        <item>1)Query round:\n\n
+Round one is querying on-site on databases already created.\n\n
+2)Story round:Analyze the data and form a story out of it. The best story bags the prize. \n\n </item>
+        <item>1) A knowledge of the basic MySQL queries(select, insert, update, delete, show ,create)[Don’t bother with triggers procedures and functions much]\n\n
+2)No need to query at all for round two.\n\n
+3) Team of 2 or 3 is allowed.</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 
     <string-array name="trifact">
-        <item>TRIFACT</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>CODE NINJA</item>
+        <item>Three steps to geek-dom::\n\n
+1) Annihilate\n\n
+2) Transpose\n\n
+3) Cipher\n\n </item>
+        <item>
+1. Debugging : “repair and redress” Hey there! Error Spotter!!\n\n
+2. Reverse Coding: “can u back pedal?” Backtrack, and find the source (code).\n\n
+3. Coding: : “Indite, indent ,innovate” Use logic to do the magic and you are now a geek.\n\n</item>
+        <item>1)Team event -3members per team\n\n
+2) All events are on spot(in app as well as pen-and-paper)\n\n
+3) Let Basic programming knowledge(java is not necessary c,c++ will do), pattern recognition and common sense guide you.\n\n</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 
     <string-array name="bombsquad">
-        <item>BOMBSQUAD</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>PAPER REMISE</item>
+        <item>Are you happier knowing the working of Napier bones? Do you have a knack at discovery like Indiana Jones? Then bring it out coherently in the form of a structured writing aka “paper”. Though all your thoughts are welcome, there are a select few topics in which your thought outflow is gladly welcome. </item>
+        <item>Will be updated soon.check out our website for quick updates\n\n www.interrupt15.in</item>
+        <item>1) Abstract must be sent by\n\n
+2) Maximum 2 members per team.\n\n
+3) Please adhere to the topic chosen strictly.\n\n
+4) Choose topics only from the list given below:\n\n
+Artificial Intellligence\n
+Image processing\n
+Data mining\n
+Internet of Things\n
+Multimedia\n
+Distributed computing\n</item>
+        <item>Will be updated soon</item>
 
     </string-array>
     <string-array name="dumbc">
@@ -119,7 +154,7 @@ a green movement,\n\t you see :P})\n\n\t
         <item>this is an event </item>
         <item>these are the rounds\n\t\t1. round1</item>
         <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 
@@ -128,15 +163,21 @@ a green movement,\n\t you see :P})\n\n\t
         <item>this is an event </item>
         <item>these are the rounds\n\t\t1. round1</item>
         <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>Will be updated soon</item>
 
     </string-array>
     <string-array name="treasurehunt">
-        <item>TREASURE HUNT</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>This is a sample question\n\t\ta.one of the above\n\t\tb.none of the above\n\t\tc.any of the above\n\t\td.some of the above</item>
+        <item>HINT FORAGE</item>
+        <item>Puzzles and hints!!  Sate your hunger for quests and teasers. Get lost in the interaction of fuzziness and logic. Do you think you can handle the tempest?\n\n
+Emerge victorious!!  </item>
+        <item>1. puzzles, riddles and a lot of other stuff. ( other stuff::The things done when boredom threatens your life).\n\n
+2.  Fire at will.\n\n
+3. Can’t talk in public? Then get ready to ACT on cue to identify a clue!!!.\n\n
+Paper presentation</item>
+        <item>1. Download our app\n\n
+2. Round 1in app as well as pen and paper\n\n
+3. 2 or 3 members per team.</item>
+        <item>Will be updated soon</item>
 
     </string-array>
 

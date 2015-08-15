@@ -25,6 +25,11 @@
 
             app:cardElevation="4dp"
             card_view:cardBackgroundColor="@color/card_bg">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,8 +51,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/event_description"
+                    android:layout_margin="5dp"
                     android:textColor="@color/text_color"/>
                 </LinearLayout>
+            </ScrollView>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -59,6 +66,9 @@
             android:background="@android:color/white"
             app:cardElevation="4dp"
             card_view:cardBackgroundColor="@color/card_bg">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,10 +91,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/event_rounds"
+                    android:layout_margin="5dp"
                     android:textColor="@color/text_color"/>
 
             </LinearLayout>
-
+            </ScrollView>
         </android.support.v7.widget.CardView>
         <Button
             android:layout_width="match_parent"

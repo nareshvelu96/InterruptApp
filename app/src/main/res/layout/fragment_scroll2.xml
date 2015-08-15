@@ -45,6 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/event_rules"
+                    android:layout_margin="5dp"
                     android:textColor="@color/text_color"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -76,6 +77,7 @@
                     android:background="@android:color/darker_gray"/>
                 <TextView
                     android:layout_width="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/event_sample"
                     android:textColor="@color/text_color"/>
