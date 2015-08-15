@@ -56,6 +56,7 @@ public class EventFragment extends Fragment implements View.OnClickListener{
 
 
 
+
         return rootView;
     }
 
