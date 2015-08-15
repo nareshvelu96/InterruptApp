@@ -74,7 +74,7 @@ DumbC+ rapid fire+ puzzles</item>
     </string-array>
 
     <string-array name="tabloid">
-        <item>CODOWITZ</item>
+        <item>DATA SURFER</item>
         <item><p>Do you think you can find hidden words? Do you think your letters are better organised than anybody else’s? Do you believe in logical reasoning  and forming words using letters from patterns?
 
 If you are Wordsworth or even 10% his words’ worth,  this is the right event for
@@ -140,17 +140,26 @@ Round one is querying on-site on databases already created.\n\n
 2) Maximum 2 members per team.\n\n
 3) Please adhere to the topic chosen strictly.\n\n
 4) Choose topics only from the list given below:\n\n
-Artificial Intellligence\n
-Image processing\n
-Data mining\n
-Internet of Things\n
-Multimedia\n
-Distributed computing\n</item>
-        <item>Will be updated soon</item>
+</item>
+        <item>1.Data Mining\n\n
+
+2.Image Processing\n\n
+
+3.Artificial Intelligence\n\n
+
+4.Networks\n\n
+
+5.Datalake\n\n
+
+6.Multimedia\n\n
+
+7.Distributed Computing\n\n
+
+8.Embedded Systems.</item>
 
     </string-array>
     <string-array name="dumbc">
-        <item>MIND YOUR BUSINESS V3.0</item>
+        <item>DUMBC</item>
         <item>this is an event </item>
         <item>these are the rounds\n\t\t1. round1</item>
         <item>these are the rules\n\t\t1. dont break rules</item>
@@ -158,15 +167,8 @@ Distributed computing\n</item>
 
     </string-array>
 
-    <string-array name="onlinecoding">
-        <item>CODING</item>
-        <item>this is an event </item>
-        <item>these are the rounds\n\t\t1. round1</item>
-        <item>these are the rules\n\t\t1. dont break rules</item>
-        <item>Will be updated soon</item>
 
-    </string-array>
-    <string-array name="treasurehunt">
+    <string-array name="hintforage">
         <item>HINT FORAGE</item>
         <item>Puzzles and hints!!  Sate your hunger for quests and teasers. Get lost in the interaction of fuzziness and logic. Do you think you can handle the tempest?\n\n
 Emerge victorious!!  </item>
@@ -179,6 +181,101 @@ Paper presentation</item>
 3. 2 or 3 members per team.</item>
         <item>Will be updated soon</item>
 
+    </string-array>
+
+
+
+    <string-array name="onlinecoding">
+        <item>CLASH OF CODERS</item>
+        <item>Class FindWhatsOnYourMind{\n
+
+Enum StatesEveryday{ \n
+
+BORED, DOODLING, TEXTING, SLEEPING\n
+
+};\n
+
+Enum OnSept7th{\n
+
+EXCITED, RUNNING, HAPPY, ENJOYING, ACTUALLY_LEARNING\n
+
+};\n
+
+String day,date,Venue;\n
+
+Public static void main( String [] args)\n
+
+{\n
+
+getDateDayLocation();/* write ui or something to get the date and venue*/\n
+
+try{\n
+
+if(Date != (depending  on how we get input)Sept7th)\n
+
+{\n
+
+/*choosing a random value from StatesEveryday*/\n
+
+StatesEveryday x= \n
+
+StatesEveryday.values()[newRandom().nextInt(StatesEveryday.values().length)];\n
+
+System.out.println(“I am”+x);\n
+
+}\n
+
+else\n
+
+{\n
+
+throw new InterruptedException();\n
+
+} }\n
+
+catch(InterruptedException e){\n
+
+ assert (Venu.equalsIgnoreCase(“svce”)) (“Must go to SVCE soon”);\n
+
+System .out.println(“Hah Yay, I am caught in the exceptional INTERRUPT”+ “ \\n I
+
+am”);\n
+
+for(OnSept7th o: OnSept7th.values())\n
+
+{\n
+
+System.out.print(o+ “\t”);\n
+
+}}} </item>
+        <item>1) Write only 10-12 lines and make magic
+
+2) This takes perseverance and endurance. Can you extrapolate your
+
+creational and application skills</item>
+        <item>1) Not a team Event
+
+2) Online coding (Work from home)!!!</item>
+        <item>Will be updated soon</item>
+
+    </string-array>
+    <string-array name="treasurehunt">
+
+        <item>QUIZLER</item>
+        <item>Forget the subject, take a break and use CS for Common Sense and not Computer
+
+Science for a while.
+
+Connect images, view the unseen, organize your thoughts and indulge in the
+
+process of finding the needful. </item>
+        <item>1) Exciting and intriguing teasers, incomplete one liners ,etc.,\n\n
+
+2) Test your IQ. Puzzles await you.</item>
+        <item>1) No programming knowledge is needed
+\n\n
+2) Basic skills for aptitude and reasoning.</item>
+        <item>Will be updated soon</item>
     </string-array>
 
     <string-array name="college_names">

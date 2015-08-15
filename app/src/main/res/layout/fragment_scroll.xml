@@ -104,6 +104,13 @@
             android:background="@drawable/register"
             android:id="@+id/event_register"
             android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:text="Swipe right to view rules"
+            android:textSize="20dp"
+            android:gravity="center"/>
     </LinearLayout>
 
 </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>

@@ -40,6 +40,7 @@ public class EventDescription extends AppCompatActivity  {
     private ActionBarDrawerToggle mDrawerToggle;
     private Toolbar toolbar;
     static String[] event_array;
+    static boolean paper=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class EventDescription extends AppCompatActivity  {
         TextView eventname= (TextView)findViewById(R.id.logo_white);
 
  /*
-*/
+*/          paper=false;
 
 
 
@@ -67,6 +68,7 @@ public class EventDescription extends AppCompatActivity  {
         break;
     case "5":
         event_array = getResources().getStringArray(R.array.bombsquad);
+        paper=true;
         h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.bombland));
         break;
     case "6":
@@ -85,6 +87,12 @@ public class EventDescription extends AppCompatActivity  {
         event_array = getResources().getStringArray(R.array.myb);
         h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.mybland));
         break;
+            case "9":
+
+                event_array = getResources().getStringArray(R.array.hintforage);
+                h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.mybland));
+                break;
+
     default:
         event_array = getResources().getStringArray(R.array.myb);
         h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.mybland));
@@ -130,11 +138,12 @@ public class EventDescription extends AppCompatActivity  {
                     //case 0:
                     //    return RecyclerViewFragment.newInstance();
                     case 1:
-                        return RecyclerViewFragment.newInstance();
+                        return ScrollFragment.newInstance();
+
                     //case 2:
                     //    return WebViewFragment.newInstance();
                     default:
-                        return ScrollFragment.newInstance();
+                        return RecyclerViewFragment.newInstance();
                 }
             }
 
@@ -147,13 +156,10 @@ public class EventDescription extends AppCompatActivity  {
             public CharSequence getPageTitle(int position) {
                 switch (position % 4) {
                     case 0:
-                        return "Description";
-                    case 1:
                         return "Rules";
-                    case 2:
-                        return "Professionnel";
-                    case 3:
-                        return "Divertissement";
+                    case 1:
+                        return "Description";
+
                 }
                 return "";
             }

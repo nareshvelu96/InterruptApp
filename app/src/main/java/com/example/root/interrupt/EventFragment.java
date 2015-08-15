@@ -42,7 +42,7 @@ public class EventFragment extends Fragment implements View.OnClickListener{
         ImageView event6=(ImageView)rootView.findViewById(R.id.event6);
         ImageView event7=(ImageView)rootView.findViewById(R.id.event7);
         ImageView event8=(ImageView)rootView.findViewById(R.id.event8);
-
+        ImageView event9=(ImageView)rootView.findViewById(R.id.event9);
         event1.setOnClickListener(this);
         event2.setOnClickListener(this);
         event3.setOnClickListener(this);
@@ -51,6 +51,7 @@ public class EventFragment extends Fragment implements View.OnClickListener{
         event6.setOnClickListener(this);
         event7.setOnClickListener(this);
         event8.setOnClickListener(this);
+        event9.setOnClickListener(this);
 
 
 

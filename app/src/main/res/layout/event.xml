@@ -96,7 +96,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/dataanport"
+                        android:src="@drawable/dataan"
                         android:id="@+id/event2"
                         />
                     <LinearLayout
@@ -108,7 +108,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
-                            android:text="Tabloid"
+                            android:text="Data Surfer"
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             />
@@ -154,7 +154,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
-                            android:text="Syntaxis"
+                            android:text="Data Dossier"
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             />
@@ -195,7 +195,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
-                            android:text="Trifecta"
+                            android:text="Code Ninja"
                             android:textSize="18sp"
                             android:textColor="#ffffff"
                             />
@@ -242,7 +242,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:gravity="center"
-                            android:text="Bombsquad"
+                            android:text="Paper Remise"
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             />

@@ -41,6 +41,10 @@ public class RecyclerViewFragment extends Fragment {
         Button register=(Button)rootView.findViewById(R.id.event_register2);
         eventsample.setText(EventDescription.event_array[4]);
         eventrules.setText(EventDescription.event_array[3]);
+        if(EventDescription.paper){
+            TextView temp= (TextView) rootView.findViewById(R.id.sample);
+            temp.setText("Topics");
+        }
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override

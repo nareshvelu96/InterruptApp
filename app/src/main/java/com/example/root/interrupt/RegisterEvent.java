@@ -37,7 +37,7 @@ public class RegisterEvent extends Fragment {
 final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
 
         final View rootView = inflater.inflate(R.layout.event_registration, container, false);
-        final CheckBox[] e=new CheckBox[8];
+        final CheckBox[] e=new CheckBox[9];
         Button register= (Button)rootView.findViewById(R.id.register_e);
         e[0]=(CheckBox)rootView.findViewById(R.id.syncb);
         e[1]=(CheckBox)rootView.findViewById(R.id.dumbcb);
@@ -49,6 +49,7 @@ final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
 
         e[6]=(CheckBox)rootView.findViewById(R.id.tricb);
         e[7]=(CheckBox)rootView.findViewById(R.id.bombcb);
+        e[8]=(CheckBox)rootView.findViewById(R.id.paper);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +64,7 @@ final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
                     params2.add(new BasicNameValuePair("id",Values.id));
                     params2.add(new BasicNameValuePair("auth_token",Values.auth_token));
 
-                    for(int i=0;i<8;i++){
+                    for(int i=0;i<9;i++){
                         if(e[i].isChecked()){
                             params2.add(new BasicNameValuePair(events[i],"1"));
                         }else{
@@ -71,7 +72,7 @@ final String[] events = {"ds","dc","db","myb","oc","oh","c","b","p"};
                         }
 
                     }
-                    params2.add(new BasicNameValuePair("p","0"));
+
                     new RegisterEvents().execute();
 
 

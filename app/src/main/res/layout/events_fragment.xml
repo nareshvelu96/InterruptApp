@@ -96,7 +96,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/dataanport"
+                        android:src="@drawable/dataan"
                         android:id="@+id/event2"
                         />
                     <LinearLayout

@@ -15,9 +15,7 @@ import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 
 
-/**
- * Created by florentchampigny on 24/04/15.
- */
+
 public class ScrollFragment extends Fragment {
 
 
