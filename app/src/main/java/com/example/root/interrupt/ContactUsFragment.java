@@ -25,7 +25,7 @@ public class ContactUsFragment extends Fragment {
         call1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberToDial = "tel:"+"";
+                String numberToDial = "tel:"+"9842092575";
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
             }
@@ -34,7 +34,7 @@ public class ContactUsFragment extends Fragment {
         call2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberToDial = "tel:"+"";
+                String numberToDial = "tel:"+"9043567123";
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
 
@@ -44,7 +44,7 @@ public class ContactUsFragment extends Fragment {
         call3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberToDial = "tel:"+"";
+                String numberToDial = "tel:"+"9003124651";
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
 
