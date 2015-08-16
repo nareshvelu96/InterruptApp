@@ -8,6 +8,17 @@
 <string name="drawer_close">drawer_close</string>
 
 
+
+    <string name="general_guidelines">
+1. All round 1s in app are on spot. A QR based validation is used to validate participants.\n\n
+2. App can be downloaded on-site also.\n\n
+3. Round 1s can also be in pen-and-paper(But we request you to prefer the app for environment-friendliness).\n\n
+4. It is not necessary that every team member should be from the same college.\n\n
+5. If timings clash don’t worry, we always have many different sets of questions and you can attend the tests appropriately.\n\n
+6. Feel free to drop in suggestions or questions at interrupt2k15@gmail.com</string>
+
+
+
     <string name="about_interrupt">\t\t\tHere we go INTERRUPTing a calm day again. Presenting the wildest and most viral sensation since cat videos and North
 West, Interrupt’15 is back-bigger and better than ever! Flying
 
