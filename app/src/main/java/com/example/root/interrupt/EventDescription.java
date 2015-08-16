@@ -81,7 +81,7 @@ public class EventDescription extends AppCompatActivity  {
         break;
     case "8":
         event_array = getResources().getStringArray(R.array.treasurehunt);
-        h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.treasureland));
+        h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.treasurehuntport));
         break;
     case "1":
         event_array = getResources().getStringArray(R.array.myb);
@@ -90,7 +90,7 @@ public class EventDescription extends AppCompatActivity  {
             case "9":
 
                 event_array = getResources().getStringArray(R.array.hintforage);
-                h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.mybland));
+                h=HeaderDesign.fromColorAndDrawable(0xcc000000,getResources().getDrawable(R.drawable.treasureland));
                 break;
 
     default:

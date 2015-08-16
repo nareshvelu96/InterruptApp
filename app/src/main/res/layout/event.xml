@@ -57,6 +57,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/album"
                         android:id="@+id/event1"
+                        android:background="#000000"
                         />
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -142,6 +143,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
+                        android:background="#000000"
                         android:src="@drawable/datastructport"
                         android:id="@+id/event3"
                         />
@@ -183,6 +185,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
+                        android:background="#000000"
                         android:src="@drawable/trifactaport"
                         android:id="@+id/event4"
                         />
@@ -232,6 +235,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/bombport"
                         android:id="@+id/event5"
+                        android:background="#000000"
                         />
                     <LinearLayout
                         android:layout_width="fill_parent"

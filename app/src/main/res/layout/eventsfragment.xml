@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/bg1">
+    android:background="#000000">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -55,6 +55,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/album"
                         android:id="@+id/event1"
+                        android:background="#000000"
                         />
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -137,6 +138,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
+                        android:background="#000000"
                         android:src="@drawable/datastructport"
                         android:id="@+id/event3"
                         />
@@ -178,6 +180,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
+                        android:background="#000000"
                         android:src="@drawable/trifactaport"
                         android:id="@+id/event4"
                         />
@@ -221,6 +224,7 @@
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/bombport"
+                        android:background="#000000"
                         android:id="@+id/event5"
                         />
                     <LinearLayout
@@ -262,6 +266,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:scaleType="fitXY"
+                    android:background="#000000"
                     android:src="@drawable/hint"
                     android:id="@+id/event9"
                     />
@@ -374,6 +379,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:scaleType="fitXY"
+                    android:background="#000000"
                     android:src="@drawable/codefraternityp"
                     android:id="@+id/event7"
                     />
@@ -415,6 +421,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:scaleType="fitXY"
+                    android:background="#000000"
                     android:src="@drawable/treasurehuntport"
                     android:id="@+id/event8"
                     />
